@@ -10,6 +10,7 @@ import Login from './pages/Login.jsx'
 import Orders from './pages/Orders.jsx'
 import PlaceOrders from './pages/PlaceOrder.jsx'
 import Navbar from './components/Navbar.jsx'
+import Footer from './components/Footer.jsx'
 
 const App = () => {
   return (
@@ -28,7 +29,9 @@ const App = () => {
         <Route path="/orders" element={<Orders />} />
         <Route path="/place-orders" element={<PlaceOrders />} />
       </Routes>
+      <Footer />
     </div>
+   
   );
 }
 
