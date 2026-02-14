@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import Home from './pages/home.jsx'
 import About from './pages/About.jsx'
 import Contact from './pages/Contact.jsx'
@@ -29,6 +29,7 @@ const App = () => {
         <Route path="/product/:productId" element={<Product />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/order" element={<Navigate to="/orders" replace />} />
         <Route path="/orders" element={<Orders />} />
         <Route path="/place-orders" element={<PlaceOrders />} />
       </Routes>
