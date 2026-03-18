@@ -1,22 +1,22 @@
-import React from 'react'
-import Navbar from './components/Navbar'
-import Sidebar from './components/Sidebar'
-import { Routes, Route } from 'react-router-dom'
-import Add from './pages/Add'
-import List from './pages/List'
-import Orders from './pages/Orders'
-import { useState } from 'react'
-import Login from './components/Login'
+import React from "react";
+import Navbar from "./components/Navbar";
+import Sidebar from "./components/Sidebar";
+import { Routes, Route } from "react-router-dom";
+import Add from "./pages/Add";
+import List from "./pages/List";
+import Orders from "./pages/Orders";
+import { useState } from "react";
+import Login from "./components/Login";
+
+export const backendUrl = import.meta.env.VITE_BACKEND_URL;
 
 const App = () => {
-  const [token, setToken] = useState('');
-
-
+  const [token, setToken] = useState("");
 
   return (
     <div className="bg-gray-50 min-h-screen">
       {token === "" ? (
-        <Login />
+        <Login setToken={setToken} />
       ) : (
         <>
           <Navbar />
@@ -35,6 +35,6 @@ const App = () => {
       )}
     </div>
   );
-}
+};
 
-export default App
+export default App;
