@@ -216,7 +216,7 @@ const Add = ({token}) => {
 
       <button
         type="submit"
-        className="w-28 py-3 mt-4 bg-black text-white cursor-pointer"
+        className="w-28 py-3 mt-4 bg-black text-white cursor-pointer duration-300 [transition-timing-function:cubic-bezier(0.175,0.885,0.32,1.275)] active:translate-y-1 active:scale-x-110 active:scale-y-90"
       >
         ADD
       </button>
