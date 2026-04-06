@@ -170,6 +170,26 @@ cd admin && npm run build && cd ..
 cd backend && npm start
 ```
 
+### Option 3: Run with Docker
+
+From the project root:
+
+```bash
+docker compose up --build
+```
+
+Services:
+
+- Frontend: http://localhost:5173
+- Admin: http://localhost:5174
+- Backend API: http://localhost:4000
+
+Stop containers:
+
+```bash
+docker compose down
+```
+
 ## 🔐 Environment Variables
 
 Create a `backend/.env` file with the following variables:
